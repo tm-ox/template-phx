@@ -1,0 +1,9 @@
+<div class="flex flex-col min-h-screen">
+  <header class="fixed top-0 flex w-full h-fit">
+    <AppWeb.NavComponent.navbar active_tab={@active_tab} tabs={@tabs} />
+  </header>
+  <main>
+    <.flash_group flash={@flash} />
+    {@inner_content}
+  </main>
+</div>
